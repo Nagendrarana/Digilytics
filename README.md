@@ -1,2 +1,2 @@
 # Digilytics
-#All the wokr I do for practice are uploaded here
+All the work I do for practice are uploaded here
