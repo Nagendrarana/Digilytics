@@ -1,0 +1,56 @@
+ <h1>
+    Student Lisiting
+ </h1>
+   
+    
+    <table class="table table-striped custab table-hover">
+
+    <thead>
+
+        <tr>
+
+            <th>ID</th>
+
+            <th>First Name</th>
+
+            <th>Last Name</th>
+
+            <th>Email</th>
+
+            <th>Phone No</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        <tr *ngFor="let post of posts">
+
+            <td>{{post.id}}</td>
+
+            <td>{{post.firstname}}</td>
+
+            <td>{{post.lastname}}</td>
+
+            <td>{{post.emailId}}</td>
+
+            <td>{{post.phone_no}}</td>
+
+            </tr>
+
+    </tbody>
+
+    </table>
+  
+ 
+  
+    
+    
+
+
+
+
+ 
+
+

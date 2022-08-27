@@ -1,0 +1,15 @@
+table {
+    width: 100%;
+    background-color: white;
+    align-content: center;
+    text-align: center;
+    
+  }
+
+
+  .avatar {
+    margin-top: 16px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}

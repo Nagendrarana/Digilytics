@@ -1,0 +1,62 @@
+
+
+<mat-toolbar>
+
+   {{posts.firstname}}'s Dashboard
+
+    </mat-toolbar>
+    
+    <mat-sidenav-container>
+      <mat-sidenav class="mat-elevation-z8" mode="side" opened>
+        <img src="../../../assets/img/{{posts.id}}.png" class="avatar mat-elevation-z8" />
+  
+  <h4 class="name">{{posts.firstname}}</h4>
+  <p class="designation">Student</p>
+  <mat-divider></mat-divider>
+        <button mat-button class="menu-button" (click)="home()">
+            <mat-icon>home</mat-icon>
+            <span>Home</span>
+        </button>
+        <button mat-button class="menu-button" (click)="fee()">
+            <mat-icon>person</mat-icon>
+            <span>Fees</span>
+        </button>
+        <button mat-button class="menu-button" (click)="result()">
+            <mat-icon>info</mat-icon>
+            <span>Result</span>
+        </button>
+        <button mat-button class="menu-button" (click)="attendence()">
+          <mat-icon>square</mat-icon>
+          <span>Attendence</span>
+      </button>
+        
+        <mat-divider></mat-divider>
+  
+        <button mat-button class="menu-button" (click)="logout()">
+            <mat-icon>square</mat-icon>
+            <span>Logout</span>
+        </button>
+  
+    </mat-sidenav>
+        
+        <mat-sidenav-content>
+            <div class="content mat-elevation-z8" *ngIf="fees_button">
+                <app-fees></app-fees>
+               
+            </div>
+            <div class="content mat-elevation-z8" *ngIf="attendence_button">
+                <app-student-attendence></app-student-attendence>
+            </div>
+            <div class="content mat-elevation-z8" *ngIf="result_button">
+                <app-student-result></app-student-result>
+               
+            </div>
+            <div class="content mat-elevation-z8" *ngIf="home_button">
+               <app-profile></app-profile>
+               
+            </div>
+                
+        </mat-sidenav-content>
+        
+    </mat-sidenav-container>
+    

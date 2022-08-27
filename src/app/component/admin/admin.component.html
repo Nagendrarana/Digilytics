@@ -1,0 +1,59 @@
+
+
+<mat-toolbar>
+
+    Admin's Dashboard    </mat-toolbar>
+    
+    <mat-sidenav-container>
+      <mat-sidenav class="mat-elevation-z8" mode="side" opened>
+        <img class="avatar mat-elevation-z8" src="../../../assets/img/10.png" />
+  
+  <h4 class="name">Admin</h4>
+  <p class="designation">IT head</p>
+  <mat-divider></mat-divider>
+        <button mat-button class="menu-button" (click)="view_student()" >
+            <mat-icon>home</mat-icon>
+            <span>View Student</span>
+        </button>
+        <button mat-button class="menu-button" (click)="view_teacher()" >
+            <mat-icon>person</mat-icon>
+            <span>View Teacher</span>
+        </button>
+        <button mat-button class="menu-button" (click)="view_result()" >
+            <mat-icon>info</mat-icon>
+            <span>View Result</span>
+        </button>
+        <button mat-button class="menu-button" (click)="view_attendence()">
+          <mat-icon>square</mat-icon>
+          <span>View Attendence</span>
+      </button>
+        
+        <mat-divider></mat-divider>
+  
+        <button mat-button class="menu-button" (click)="logout()">
+            <mat-icon>square</mat-icon>
+            <span>Logout</span>
+        </button>
+  
+    </mat-sidenav>
+        
+        <mat-sidenav-content>
+            <div class="content mat-elevation-z8" *ngIf="vs">
+                <app-mat-filter></app-mat-filter>
+            </div>
+            <div class="content mat-elevation-z8" *ngIf="vt">
+                <app-mat-teacher-filter></app-mat-teacher-filter>
+               
+            </div>
+            <div class="content mat-elevation-z8" *ngIf="vr">
+                <app-result></app-result>
+            </div>
+            <div class="content mat-elevation-z8" *ngIf="va">
+                <app-attendence></app-attendence>
+               
+            </div>
+            
+            
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+  

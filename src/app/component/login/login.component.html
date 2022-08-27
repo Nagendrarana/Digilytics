@@ -1,0 +1,45 @@
+<div class="bootstrap-wrapper" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <mat-card class="mt">
+                <div class="container text-center">
+                    <img 
+                    class="img-fluid"
+                    style="width: 100px"
+                    src="../../../assets/img/11.png" alt=""/>
+                </div>
+                <p class="text-center fs">Login here</p>
+                <form (ngSubmit)="onSubmit()">
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input
+                        [(ngModel)]="credentials.email"
+                        name="email"
+                        type="email"
+                        required
+                         matInput>
+                    </mat-form-field>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input
+                        [(ngModel)]="credentials.password"
+                        name="password"
+                        type="password"
+                        required
+                        matInput>
+                    </mat-form-field>
+                    <div class="container text-center">
+                        <button type="submit" mat-raised-button color="primary">Login</button>
+                        <a style="margin-left: 10px" routerLink="/forgot" mat-raised-button color="success">Forgot Password</a>
+                    </div>
+                </form>
+                <br>
+            </mat-card>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- the element will have a width of 6 colums and there will be 3 blank columns before the element (and as a consequence, will have 3 blank colums after). -->

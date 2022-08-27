@@ -1,0 +1,28 @@
+#profile-image{
+    max-width: 125px;
+    max-height: 125px;
+    border: 2px solid #004a9f;
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+    align-self: start;
+    
+
+
+}
+.nt{
+
+    margin: auto;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}

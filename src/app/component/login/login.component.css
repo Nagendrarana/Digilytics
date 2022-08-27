@@ -1,0 +1,24 @@
+.full-width {
+    width: 100%;
+}
+
+.mat-success {
+    background-color:#424242;
+    color: #fff;
+}
+
+.mt{
+    margin-top: 15vh;
+}
+
+.fs {
+    font-size: 1.25rem;
+}
+mat-form-field{
+    background: transparent;
+    background-image: inherit;
+}
+bootstrap-wrapper{
+    background: inherit;
+    background-image: inherit;
+}
